@@ -1,0 +1,67 @@
+/* Set a dark background color for the body and light text color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+}
+
+/* Style the header with a slightly lighter background */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Style the navigation links with a subtle color and spacing */
+nav a {
+    color: #76c7c0; /* Light teal color for links */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4bb1a1; /* Slightly brighter color on hover */
+}
+
+/* Style each section with some padding and a bottom border */
+section {
+    padding: 20px;
+    border-bottom: 1px solid #333333;
+}
+
+/* Dark background and light border for the contact form inputs */
+input, textarea {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border: 1px solid #333333;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #76c7c0; /* Button background */
+    color: #121212; /* Dark text color on button */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #4bb1a1; /* Slightly darker button on hover */
+}
+
+/* Link color for general links */
+a {
+    color: #76c7c0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4bb1a1;
+}

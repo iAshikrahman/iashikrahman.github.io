@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Cybersecurity Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#Certifications">Certifications</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Brief introduction to your background in cybersecurity.</p>
+    </section>
+    <!-- Add sections for projects, skills, and contact -->
+</body>
+</html>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="{{ url_for('submit_form') }}" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
