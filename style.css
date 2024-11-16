@@ -13,6 +13,10 @@ header {
     color: #ffffff;
     text-align: center;
 }
+#about p {
+    line-height: 1.5;
+}
+
 
 /* Style the navigation links with a subtle color and spacing */
 nav a {

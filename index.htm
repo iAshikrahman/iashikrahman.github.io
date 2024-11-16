@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybersecurity Portfolio</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,26 +12,61 @@
         <h1>My Cybersecurity Portfolio</h1>
         <nav>
             <a href="#about">About</a>
-            <a href="#Certifications">Certifications</a>
             <a href="#projects">Projects</a>
+            <a href="#Certifications">Certifications</a>
             <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact" id="contact-link">Contact</a>
         </nav>
     </header>
+    
     <section id="about">
         <h2>About Me</h2>
-        <p></p>
+        <p>Hello! I'm Ashik, a passionate and dedicated cybersecurity enthusiast with a strong foundation in protecting digital assets and networks. I recently completed the Google Cybersecurity Certificate, where I gained hands-on experience with the latest industry tools and best practices in security.
+
+            I am focused on continuously learning and growing in the field of cybersecurity. My expertise includes identifying vulnerabilities, protecting data, and implementing security protocols to safeguard against cyber threats. With a keen eye for detail and problem-solving skills, I am ready to help individuals and businesses secure their digital environments.
+            
+            Feel free to explore my portfolio, where I showcase my skills, projects, and passion for cybersecurity. Let’s connect and make the digital world a safer place!</p>
     </section>
-    <!-- Add sections for projects, skills, and contact -->
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Showcase of your cybersecurity projects here.</p>
+    </section>
+
+    <section id="Certifications">
+        <h2>Certifications</h2>
+        <p>List of cybersecurity Certifications you possess.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>List of cybersecurity skills you possess.</p>
+    </section>
+
+    <!-- Contact Section (now links to social media) -->
+    <section id="contact">
+        <h2>Connect with Me</h2>
+        <p>You can connect with me on the following platforms:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/iashikrahman/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/iAshikrahman" target="_blank">GitHub</a></li>
+            <!-- Add more social media links as needed -->
+        </ul>
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xwpkbzny" method="POST">
+            <label>
+                Your email:
+                <input type="email" name="email" placeholder="Your Email" required>
+            </label>
+            <label>
+                Your message:
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            </label>
+            <!-- Add any additional form fields here as needed -->
+            <button type="submit">Send</button>
+        </form>
+        
+    </section>
+
 </body>
 </html>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-    <form action="{{ url_for('submit_form') }}" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-    </form>
-</section>
